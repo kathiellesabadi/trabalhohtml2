@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Sex Shop Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #7d3d82, #542b5e);
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    header nav ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 1.5rem;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #d4a3d4;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #7d3d82;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: linear-gradient(to bottom, #7d3d82, #542b5e);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    form button:hover {
+      background: linear-gradient(to bottom, #a96fb4, #7d3d82);
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sex Shop Online</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="fale.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="cadastro-form">
+      <h2>Cadastro</h2>
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+
+      <button type="submit" id="submit-btn">Cadastrar</button>
+      <p class="error-message" id="age-error-message" style="display: none;">Não é permitido se registrar por ser menor de 18 anos</p>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('cadastro-form').addEventListener('submit', function(event) {
+      var idade = document.getElementById('idade').value;
+      if (idade < 18) {
+        document.getElementById('age-error-message').style.display = 'block';
+        event.preventDefault(); // Impede o envio do formulário
+      } else {
+        document.getElementById('age-error-message').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
