@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex Shop Online</title>
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #7d3d82, #542b5e);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header nav ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #d4a3d4;
+        }
+
+        main {
+	    padding-top: 2rem;
+            padding-left: 2rem;
+	    padding-right: 2rem;
+	    padding-bottom: 10rem;
+            text-align: center;
+        }
+
+        .banner {
+            margin-bottom: 3rem;
+        }
+
+        .banner h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #7d3d82;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(to bottom, #7d3d82, #542b5e);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #a96fb4, #7d3d82);
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product {
+            flex: 0 1 calc(33.33% - 2rem);
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .product h3 {
+            color: #7d3d82;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #7d3d82, #542b5e);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sex Shop Online</h1>
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="fale.html">Fale Conosco</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Bem-vindo à nossa loja de produtos sensuais!</h2>
+            <p>Descubra uma variedade de produtos para apimentar sua vida amorosa.</p>
+            <a href="#" class="btn">Ver produtos</a>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="https://i.imgur.com/FI8LNii.jpg" alt="Xana Loka Gel Excitante Feminino 15g Hot Flowers">
+                <h3>Xana Loka Gel Excitante Feminino 15g Hot Flowers</h3>
+                <p>Descrição breve do Produto A.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/ryOgSX1.jpg" alt="Love Lub Ice Lubrificante Corporal 60g La Pimienta">
+                <h3>Love Lub Ice Lubrificante Corporal 60g La Pimienta</h3>
+                <p>Descrição breve do Produto B.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/g2MzK44.jpg" alt="D4 Lubrificante Íntimo Beijável 60G Sexy Fantasy">
+                <h3> D4 Lubrificante Íntimo Beijável 60G Sexy Fantasy</h3>
+                <p>Descrição breve do Produto C.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/tWmYpGP.jpg" alt="Sedenta Por Oral Gel Comestível com Glitter 50g Pepper Blend">
+                <h3>Sedenta Por Oral Gel Comestível com Glitter 50g Pepper Blend</h3>
+                <p>Descrição breve do novo produto.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/NDhGJnP.jpg" alt="Gel Deslizante Neutro Comestível 12g Miess">
+                <h3>Gel Deslizante Neutro Comestível 12g Miess</h3>
+                <p>Descrição breve do segundo produto.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/ML4HO69.jpg" alt="Yummy Gel Térmico Beijável Sexy Fantasy">
+                <h3>Yummy Gel Térmico Beijável Sexy Fantasy</h3>
+                <p>Descrição breve do terceiro produto.</p>
+            </div>
+            <div class="product">
+                <img src="https://imgur.com/TvgSAeJ.jpg" alt="Gel Excitante Masculino Volumão 25gr Hot Flowers">
+                <h3>Gel Excitante Masculino Volumão 25gr Hot Flowers</h3>
+                <p>Descrição breve do quarto produto.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sex Shop Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
