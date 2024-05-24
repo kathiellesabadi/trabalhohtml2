@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Sex Shop Online</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #7d3d82, #542b5e);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            margin-bottom: 1.5rem;
+            color: #7d3d82;
+        }
+
+        .container p {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: #7d3d82;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: linear-gradient(to bottom, #7d3d82, #542b5e);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #a96fb4, #7d3d82);
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Sex Shop Online</h1>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>Somos uma equipe dedicada a tornar a exploração da intimidade e prazer uma experiência acolhedora, acessível e empoderadora para todos os nossos clientes...</p>
+      <a href="home.html" class="button">Visite Nossa Loja</a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Sex Shop Online. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
