@@ -137,6 +137,7 @@
         <li><a href="sobre.html">Sobre nós</a></li>
         <li><a href="cadastro.html">Cadastro</a></li>
         <li><a href="fale.html">Fale Conosco</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
   </header>
